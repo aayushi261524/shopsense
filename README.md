@@ -1,28 +1,20 @@
-# React Example - Product Compare Page :tada: :fireworks:
+# ShopSense
 
-Product comparison page build using **React** + **Redux** + **Bootstrap** + **SASS**
+A credited open-source grocery comparison adaptation for Aayushi’s portfolio.
 
-![Screenshot](https://s8.postimg.cc/fdfsvumkl/Screen_Shot_2018-07-05_at_16.36.17.png)
+## Original work and licence
+Forked from [Rhymond/product-compare-react](https://github.com/Rhymond/product-compare-react), MIT licensed. The original catalogue, product selection, Redux state and comparison table originate upstream. The original LICENSE is retained.
 
-It's build on top of [`create-react-app`](http://www.google.lt)
+## Added in this adaptation
+- A maximum listed-price input and Fresh/Frozen preference within the selected-product comparison.
+- Explicit matching and lowest-matching-price explanations, including no-match guidance.
+- Visible upstream attribution and honest demo boundaries.
+- A Vite/Dart Sass build replacing the original obsolete native Sass/webpack setup.
 
-Usage
--
-Documentation how to *run*, *build* and *test* app
+The guide assesses listed price and condition only. Pack size, shipping, live inventory, quality and nutritional needs are not evaluated. Catalogue prices are illustrative, not current offers. No checkout, payment processing, AI recommendations or adoption claims.
 
-> https://github.com/facebookincubator/create-react-app#npm-start-or-yarn-start
+## Validation
+Component checks cover rendering, budget constraints, condition filtering, no matching products and an empty selection. Deployment build and browser verification are tracked separately.
 
-Demo
--
-> http://react-compare-app.surge.sh
-
-Contributing
--
-Thank you for considering contributing!
-Please use GitHub issues and Pull Requests for Contributing.
-
-License
--
-The MIT License (MIT). Please see License File for more information.
-
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Rhymond/product-compare-react)
+## Run / deploy
+Install with `npm install --package-lock=false --legacy-peer-deps`, then `npm run dev` or `npm run build`. The inherited lockfile belongs to the legacy toolchain; Vercel uses the tracked install override. Output is `dist`.
